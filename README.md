@@ -56,7 +56,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Book#readings`
   - returns an array of all the `Reading` instances for the `Movie`.
 - `Movie#reader_names`
-  - returns an array of the names of all the `User`s that read the `Book`.
+  - returns an array of the names of all the `User`s who have read the `Book`.
 
 
 #### User
@@ -65,16 +65,16 @@ Some of the methods listed are provided to you in the starter code. You should c
   - `User` is initialized with a name (string)
   - name **can be** changed after the User is initialized
 - `User#name`
-  - returns the User's name
+  - returns the `User`'s name
 - `User.all`
-  - returns an array of all the Viewer instances that have been initialize
+  - returns an array of all the `User` instances that have been initialize
 - `User#readings`
   - returns an array of `Reading` instances associated with the `User` instance.
 - `User#books_read`
   - returns an array of `Book` instances that the `User` has read.
 - `User#read_book(book)`
   - a `Book` instance is passed in as an argument
-  - `User` should now have that `Book` instance in it's list of `Book`s
+  - `User` should add that `Book` instance to it's list of books it has read `Book`s
 
 #### Reading
 
@@ -99,13 +99,15 @@ _Hint: Don't forget to have your classes inherit from `ActiveRecord::Base`_
 
 - Make all of the necessary changes to your models
     - update your models so that they will work with Active Record
-    - change and/or remove all class and instance methods that you you have written inside of your models
+    - change and/or remove any _unneccessary_ class and instance methods that you have written inside of your models
 
-#### Add Functionality
+#### Update the Domain 
 
 - `Books` have many `Authors`
 - `Authors` have many `Books`
 - `Books` - `Authors` is a many to many relationship
+
+#### Add Functionality
 
 ##### Book
 
@@ -121,6 +123,8 @@ _Hint: Don't forget to have your classes inherit from `ActiveRecord::Base`_
   - returns an array of all the `Book`s an `Author` has written.
 - `Author#book_titles`
   - returns a unique array of the titles of all the `Book`s that an `Author` has written.
+- `Author#customers`
+  - returns a unique array of all the `User` instances that have read a book by this authors
 
 ##### User
 
@@ -128,5 +132,4 @@ _Hint: Don't forget to have your classes inherit from `ActiveRecord::Base`_
   - returns an array of all the `Author`instances whose books a `User` has read.
 
 
-
-## Checkpoint: Make a final commit with message "part 2 complete"
+## Checkpoint: Double check that your app can execute ALL of the methods from Part I and Part II. Then, make a final commit with message "part 2 complete"
