@@ -14,7 +14,7 @@
 
 To get started, run `bundle install` while inside of this directory.
 
-Build out all of the methods listed in the deliverables. The methods are listed in a suggested order, but you can feel free to tackle the ones you think are easiest. Be careful: some of the later methods rely on earlier ones.
+Read this README carefully. Build out all of the methods listed in the deliverables. The methods are listed in a suggested order, but you can feel free to tackle the ones you think are easiest.
 
 **Remember!** This code challenge does not have tests. You cannot run `rspec` and you cannot run `learn`. You'll need to create your own sample instances so that you can try out your code on your own. Make sure your associations and methods work in the console before submitting.
 
@@ -26,7 +26,7 @@ Similarly, messy code that works is better than clean code that doesn't. First, 
 
 ## Deliverables
 
-For this challenge, we'll be working with a User-Books Domain to track books that people have read.
+For this challenge, we'll be building out a User-Books Domain to track books that people have read.
 
 We have three models: `User`, `Book`, and `Reading`.
 
@@ -112,7 +112,7 @@ _Hint: Don't forget to have your classes inherit from `ActiveRecord::Base`_
 - `Book#authors`
   - returns an array of all the `Author`s of the `Book`.
 - `Book#author_names`
-  - returns an array of the names of all the `Authors`s who wrote the `Book`.
+  - returns a unique array of the names of all the `Authors`s who wrote the `Book`.
 
 
 ##### Author
@@ -120,7 +120,13 @@ _Hint: Don't forget to have your classes inherit from `ActiveRecord::Base`_
 - `Author#books`
   - returns an array of all the `Book`s an `Author` has written.
 - `Author#book_titles`
-  - returns an array of the titles of all the `Book`s that an `Author` has written.
+  - returns a unique array of the titles of all the `Book`s that an `Author` has written.
+
+##### User
+
+- `User#authors`
+  - returns an array of all the `Author`instances whose books a `User` has read.
+
 
 
 ## Checkpoint: Make a final commit with message "part 2 complete"
