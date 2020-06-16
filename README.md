@@ -91,7 +91,7 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 ### Part II: Convert this application to an Active Record application and add functionality
 
-_Hint: Don't forget to have your classes inherit from ActiveRecord::Base_
+_Hint: Don't forget to have your classes inherit from `ActiveRecord::Base`_
 
 #### Update Application
 
