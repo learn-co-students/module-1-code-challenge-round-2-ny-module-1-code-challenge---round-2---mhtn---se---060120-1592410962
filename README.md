@@ -127,7 +127,7 @@ _Hint: Don't forget to have your classes inherit from `ActiveRecord::Base`_
   - returns a unique array of all the `User` instances that have read a book by this authors
 - `Author#profile`
   - puts a string that says the `Author`'s name and total number of `Book`s the `Author` has written
-  - For example: "Hi, my name is Tashawn and I have written 10 books'
+  - For example: "Hi, my name is Maggie and I have written 10 books'
 
 ##### User
 
