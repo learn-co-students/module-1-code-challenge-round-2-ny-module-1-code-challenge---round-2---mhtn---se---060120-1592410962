@@ -1,7 +1,14 @@
-class Book
-
-    
+class Book < ActiveRecord::Base
+   has_many :relations
+   has_many :authors, through: :relations
+   has_many :readings
+   has_many :users, through: :readings     
 end
+
+
+
+
+
 
 ############### BACKUP FOR PART 1 #####################
  # attr_reader :title 

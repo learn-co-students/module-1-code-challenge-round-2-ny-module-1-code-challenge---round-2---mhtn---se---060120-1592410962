@@ -1,8 +1,12 @@
-class Reading
-
-   
-
+class Reading < ActiveRecord::Base
+   belongs_to :book 
+   belongs_to :user
 end
+
+
+
+
+
 ############### BACKUP FOR PART 1 #####################
  # attr_accessor :user, :book 
 

@@ -1,8 +1,13 @@
-class User
-
-    
-
+class User < ActiveRecord::Base
+    has_many :readings
+    has_many :books, through: :readings
 end
+
+
+
+
+
+
 
 ############### BACKUP FOR PART 1 #####################
 # attr_accessor :name 
