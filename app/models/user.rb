@@ -20,4 +20,10 @@ class User
         end 
     end 
 
+    def authors
+        Author.all.select do |book|
+            self==user.book 
+        end 
+    end 
+
 end

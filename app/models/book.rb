@@ -1,8 +1,9 @@
 class Book
-    attr_accessor :title
+    attr_accessor :title, :author
     @@all=[]
-    def initialize(title)
+    def initialize(title, author)
         @title=title 
+        @author=author
         @@all<<self
         
     end
@@ -21,6 +22,16 @@ class Book
             self==book.user
         end 
     end 
+
+    def authors
+        Author.all 
+    end
+
+    def author_names
+        Author.all.select do |book|
+            self==book.author 
+        end 
+
 
 
 
