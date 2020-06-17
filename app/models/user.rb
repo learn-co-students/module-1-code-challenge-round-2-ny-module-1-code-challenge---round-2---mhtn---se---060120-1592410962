@@ -1,6 +1,18 @@
 class User < ActiveRecord::Base
     has_many :readings
     has_many :books, through: :readings
+
+    def author_helper 
+       self.readings.map {|reading| reading.book_id}
+    end 
+
+    def author
+        author_array = []
+        author_helper.each do |number|
+        author_array << Author.all[number-1]
+        end 
+        author_array 
+    end 
 end
 
 

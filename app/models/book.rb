@@ -2,7 +2,11 @@ class Book < ActiveRecord::Base
    has_many :relations
    has_many :authors, through: :relations
    has_many :readings
-   has_many :users, through: :readings     
+   has_many :users, through: :readings  
+   
+   def author_names 
+      self.authors.map {|author| author.name}
+   end 
 end
 
 

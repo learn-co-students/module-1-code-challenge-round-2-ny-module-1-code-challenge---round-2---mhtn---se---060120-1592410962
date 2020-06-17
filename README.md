@@ -97,17 +97,17 @@ _Hint: Don't forget to have your classes inherit from `ActiveRecord::Base`_
 
 #### Update Application
 
-- Create all of the necessary tables
+<!-- - Create all of the necessary tables
 
 - Make all of the necessary changes to your models
     - update your models so that they will work with Active Record
-    - change and/or remove any _unneccessary_ class and instance methods that you have written inside of your models
+    - change and/or remove any _unneccessary_ class and instance methods that you have written inside of your models -->
 
 #### Update the Domain 
 
-- `Books` have many `Authors`
+<!-- - `Books` have many `Authors`
 - `Authors` have many `Books`
-- `Books` - `Authors` is a many to many relationship
+- `Books` - `Authors` is a many to many relationship -->
 
 #### Add Functionality
 
