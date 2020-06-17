@@ -1,22 +1,6 @@
-class User
-    attr_accessor :name
-
-    @@all = []
-
-    def initialize(name)
-        @name = name
-        @@all << self
-    end
-
-    def self.all
-        @@all
-    end
-
-    def readings
-        Reading.all.select do |reading|
-            reading.user == self
-        end
-    end
+class User < ActiveRecord::Base
+    has_many :readings
+    has_many :books, through: :readings 
 
     def books_read
         readings.map do |reading|
@@ -32,6 +16,12 @@ class User
         self.all.select do |user|
             user.books_read.count > 2
         end.uniq
+    end
+
+    def authors
+        Reading.all.select do |book|
+            book.authors == self
+        end 
     end
 
 end
