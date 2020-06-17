@@ -19,5 +19,5 @@ r4 = Reading.new(u3,b4)
 r5 = Reading.new(u3,b1)
 
 
-binding.pry
-#Pry.start
+#binding.pry
+Pry.start

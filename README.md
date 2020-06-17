@@ -44,47 +44,48 @@ Some of the methods listed are provided to you in the starter code. You should c
 
 ### Part I: Using ONLY Object Oriented Ruby (no Active Record or databases)
 
+
 #### Book
 
-- `Book#initialize(title)`
+<!-- - `Book#initialize(title)` 
   - `Book` is initialized with a title (string)
-  - title **cannot be** changed after the `Book` is initialized
-- `Book#title`
-  - returns the `Book`'s title
-- `Book.all`
-  - returns an array of all the `Book` instances that have been initialized
-- `Book#readings`
-  - returns an array of all the `Reading` instances for the `Book`.
-- `Book#reader_names`
-  - returns an array of the names of all the `User`s who have read the `Book`.
+  - title **cannot be** changed after the `Book` is initialized -->
+<!-- - `Book#title`
+  - returns the `Book`'s title -->
+<!-- - `Book.all`
+  - returns an array of all the `Book` instances that have been initialized -->
+<!-- - `Book#readings`
+  - returns an array of all the `Reading` instances for the `Book`. -->
+<!-- - `Book#reader_names`
+  - returns an array of the names of all the `User`s who have read the `Book`. -->
 
 #### User
 
-- `User#initialize(name)`
+<!-- - `User#initialize(name)`
   - `User` is initialized with a name (string)
-  - name **can be** changed after the User is initialized
-- `User#name`
-  - returns the `User`'s name
-- `User.all`
-  - returns an array of all the `User` instances that have been initialize
-- `User#readings`
-  - returns an array of `Reading` instances associated with the `User` instance.
-- `User#books_read`
-  - returns an array of `Book` instances that the `User` has read.
-- `User#read_book(book)`
+  - name **can be** changed after the User is initialized -->
+<!-- - `User#name`
+  - returns the `User`'s name -->
+<!-- - `User.all`
+  - returns an array of all the `User` instances that have been initialize -->
+<!-- - `User#readings`
+  - returns an array of `Reading` instances associated with the `User` instance. -->
+<!-- - `User#books_read`
+  - returns an array of `Book` instances that the `User` has read. -->
+<!-- - `User#read_book(book)`
   - a `Book` instance is passed in as an argument
-  - `User` should add that `Book` instance to it's list of books it has read `Book`s
-- `User.scholars`
-  - returns an array of all `User` instances that have read more than 2 `Book`s
+  - `User` should add that `Book` instance to it's list of books it has read `Book`s -->
+<!-- - `User.scholars`
+  - returns an array of all `User` instances that have read more than 2 `Book`s -->
 
 #### Reading
 
-- `Reading.all`
-  - returns an array of all initialized `Reading` instances
-- `Reading#user`
-  - returns the `User` instance associated with the `Reading` instance
-- `Reading#book`
-  - returns the `Book` instance associated with the `Reading` instance
+<!-- - `Reading.all`
+  - returns an array of all initialized `Reading` instances -->
+<!-- - `Reading#user`
+  - returns the `User` instance associated with the `Reading` instance -->
+<!-- - `Reading#book`
+  - returns the `Book` instance associated with the `Reading` instance -->
 
 
 ## Checkpoint: Make a commit with message "part 1 complete"
