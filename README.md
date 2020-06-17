@@ -54,10 +54,9 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `Book.all`
   - returns an array of all the `Book` instances that have been initialized
 - `Book#readings`
-  - returns an array of all the `Reading` instances for the `Movie`.
-- `Movie#reader_names`
+  - returns an array of all the `Reading` instances for the `Book`.
+- `Book#reader_names`
   - returns an array of the names of all the `User`s who have read the `Book`.
-
 
 #### User
 
@@ -75,7 +74,11 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `User#read_book(book)`
   - a `Book` instance is passed in as an argument
   - `User` should add that `Book` instance to it's list of books it has read `Book`s
-
+- `User#books_read`
+  - returns an array of `Book` instances that the `User` has read
+- `User.scholars`
+  - returns an array of all `User` instances that have read more than 2 `Book`s
+  
 #### Reading
 
 - `Reading.all`
@@ -128,6 +131,8 @@ _Hint: Don't forget to have your classes inherit from `ActiveRecord::Base`_
 - `Author#profile`
   - puts a string that says the `Author`'s name and total number of `Book`s the `Author` has written
   - For example: "Hi, my name is Maggie and I have written 10 books'
+- `Author.most_prolific`
+  - Returns the `Author` instance that has written the most books
 
 ##### User
 
