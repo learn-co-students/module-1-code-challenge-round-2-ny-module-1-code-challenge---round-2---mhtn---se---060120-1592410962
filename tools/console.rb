@@ -16,6 +16,7 @@ r1 = Reading.new(u1,b1)
 r2 = Reading.new(u2,b2)
 r3 = Reading.new(u3,b3)
 r4 = Reading.new(u3,b4)
+r5 = Reading.new(u3,b1)
 
 
 binding.pry
