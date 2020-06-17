@@ -74,11 +74,9 @@ Some of the methods listed are provided to you in the starter code. You should c
 - `User#read_book(book)`
   - a `Book` instance is passed in as an argument
   - `User` should add that `Book` instance to it's list of books it has read `Book`s
-- `User#books_read`
-  - returns an array of `Book` instances that the `User` has read
 - `User.scholars`
   - returns an array of all `User` instances that have read more than 2 `Book`s
-  
+
 #### Reading
 
 - `Reading.all`
