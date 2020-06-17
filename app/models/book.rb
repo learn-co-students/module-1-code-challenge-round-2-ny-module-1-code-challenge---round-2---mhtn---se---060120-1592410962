@@ -12,4 +12,12 @@ class Book
     def self.all
         @@all 
     end 
+
+    def readings 
+        Reading.all.select {|reading| reading.book == self}
+    end 
+
+    def reader_names  
+        readings.map {|reading| reading.user.name}
+    end 
 end
